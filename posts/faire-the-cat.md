@@ -1,6 +1,7 @@
 ---
 title: Fariekin
 description: the cat
+image: /images/coconuts.jpeg
 ---
 
 # Hello
