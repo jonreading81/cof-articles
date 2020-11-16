@@ -5,7 +5,7 @@ import { global } from '../styles';
 const App = ({ Component, pageProps }) => (
   <>
     <Global styles={global} />
-    <Component {...pageProps} />;
+    <Component {...pageProps} />
   </>
 );
 
