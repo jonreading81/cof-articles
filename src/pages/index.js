@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+
 import { getPosts } from '../services/posts';
 import { hotpink } from '../styles';
 
@@ -11,7 +11,7 @@ const Home = ({ posts }) => (
         <li key={slug}>
           <Link href={`/articles/${slug}`}>
             <a>
-              <Image src={image} width={60} height={40} />
+              <img src={image} width={60} height={40} />
               <h2 css={hotpink}>{title}</h2>
             </a>
           </Link>
