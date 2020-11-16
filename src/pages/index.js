@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import { getPosts } from '../services/posts';
 import { hotpink } from '../styles';
 

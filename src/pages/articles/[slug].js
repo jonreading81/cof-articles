@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Head from 'next/head';
 import { getPost, getSlugs } from '../../services/posts';
 
@@ -9,8 +10,13 @@ const Post = ({ htmlString, title, description, image }) => {
         <title>{title}</title>
         <meta title="description" content={description} />
       </Head>
-      <img src={image} width={200} height={60} />
-      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+      <Link href="/">
+        <a>Articles</a>
+      </Link>
+      <section>
+        <img src={image} width={200} height={60} />
+        <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+      </section>
     </>
   );
 };
