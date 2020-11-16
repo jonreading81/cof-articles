@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import fs from 'fs';
+import { getPosts } from '../services/posts';
 
-const Home = ({ slugs }) => (
+const Home = ({ posts }) => (
   <div>
     <h1>Amys Articles</h1>
     <ul>
-      {slugs.map((slug) => (
+      {posts.map(({ title, slug }) => (
         <li key={slug}>
           <Link href={`/articles/${slug}`}>
-            <a>{slug}</a>
+            <a>{title}</a>
           </Link>
         </li>
       ))}
@@ -17,10 +17,9 @@ const Home = ({ slugs }) => (
 );
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync('posts');
   return {
     props: {
-      slugs: files.map((filename) => filename.replace('.md', '')),
+      posts: getPosts(),
     },
   };
 };
