@@ -16,12 +16,10 @@ const Home = ({ posts }) => (
   </div>
 );
 
-export const getStaticProps = async () => {
-  return {
-    props: {
-      posts: getPosts(),
-    },
-  };
-};
+export const getStaticProps = async () => ({
+  props: {
+    posts: getPosts(),
+  },
+});
 
 export default Home;

@@ -14,23 +14,17 @@ const Post = ({ htmlString, title, description }) => {
   );
 };
 
-export const getStaticPaths = async () => {
-  const paths = getSlugs().map((slug) => ({
+export const getStaticPaths = async () => ({
+  paths: getSlugs().map((slug) => ({
     params: {
       slug,
     },
-  }));
+  })),
+  fallback: false,
+});
 
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export const getStaticProps = async ({ params: { slug } }) => {
-  return {
-    props: getPost(slug),
-  };
-};
+export const getStaticProps = async ({ params: { slug } }) => ({
+  props: getPost(slug),
+});
 
 export default Post;
