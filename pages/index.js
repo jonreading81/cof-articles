@@ -3,7 +3,7 @@ import fs from 'fs';
 
 const Home = ({ slugs }) => (
   <div>
-    <h1>COF Articles</h1>
+    <h1>Amys Articles</h1>
     <ul>
       {slugs.map((slug) => (
         <li key={slug}>
