@@ -11,8 +11,10 @@
     "deploy": "yarn build && yarn export && yarn upload"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.0.0",
     "@emotion/react": "^11.0.0",
     "aws": "^0.0.3-2",
+    "babel-plugin-emotion": "^11.0.0",
     "gray-matter": "^4.0.2",
     "marked": "^0.8.2",
     "next": "^10.0.1",
