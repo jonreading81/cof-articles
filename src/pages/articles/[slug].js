@@ -11,10 +11,9 @@ const Post = ({ htmlString, title, description, image }) => {
         <meta title="description" content={description} />
       </Head>
       <section>
+        <h1>{title}</h1>
         <img src={image} width="100%" />
-        <Link href="/">
-          <a class="text-lg">Articles</a>
-        </Link>
+
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </section>
     </>
