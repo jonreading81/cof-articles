@@ -35,33 +35,40 @@ html, body, #__next {
   }
 
   h1,
-  .h1 {
+  .text-xxl {
     ${responsiveFontSize(text.xxl)}
   }
 
   h2,
-  .h2 {
+  .text-xl {
     ${responsiveFontSize(text.xl)}
   }
 
   h3,
-  .h3 {
+  .text-lg {
     ${responsiveFontSize(text.lg)}
   }
 
   h4,
-  .h4 {
+  .text-md {
     ${responsiveFontSize(text.md)}
   }
 
   h5,
-  .h5,
   h6,
-  .h6 {
+  .text-sm {
     ${responsiveFontSize(text.sm)}
   }
 
   p {
     ${responsiveFontSize(text.sm)}
+  }
+
+  .text-xs {
+    ${responsiveFontSize(text.xs)}
+  }
+
+  .text-xss {
+    ${responsiveFontSize(text.xxs)}
   }
 `;
