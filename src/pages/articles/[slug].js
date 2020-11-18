@@ -13,7 +13,6 @@ const Post = ({ htmlString, title, description, image }) => {
       <section>
         <h1>{title}</h1>
         <img src={image} width="100%" />
-
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </section>
     </>
