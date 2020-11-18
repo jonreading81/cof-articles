@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { getPost, getSlugs } from '../../services/posts';
 
-const Post = ({ htmlString, title, description, image }) => {
+const Post = ({ htmlString, title, description, image, slug }) => {
   return (
     <>
       <Head>
@@ -11,8 +11,16 @@ const Post = ({ htmlString, title, description, image }) => {
         <meta title="description" content={description} />
       </Head>
       <section>
-        <h1>{title}</h1>
         <img src={image} width="100%" />
+        <h1>{title}</h1>
+        <ol>
+          <li>
+            <Link href="/">Articles</Link>
+          </li>
+          <li>
+            <Link href={`/articles/${slug}`}>{title}</Link>
+          </li>
+        </ol>
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </section>
     </>

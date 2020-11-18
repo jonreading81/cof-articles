@@ -32,6 +32,8 @@ html, body, #__next {
   h6 {
     font-family: ${fonts.PRIMARY_BOLD.family};
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.5em;
   }
 
   h1,

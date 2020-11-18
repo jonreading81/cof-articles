@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { grid } from '../../styles/grid';
-import { gridItem } from './styles';
+import * as gridStyles from '../../styles/grid';
+import * as styles from './styles';
 
 export const ArticleGrid = ({ articles }) => (
-  <div css={grid}>
+  <div css={gridStyles.grid}>
     {articles.map(({ title, slug, image, description }) => (
-      <div css={gridItem} key={slug}>
+      <div css={styles.gridItem} key={slug}>
         <Link href={`/articles/${slug}`}>
           <a>
             <img src={image} width="100%" />
