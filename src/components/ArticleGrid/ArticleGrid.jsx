@@ -4,7 +4,7 @@ import * as gridStyles from '../../styles/grid';
 import * as styles from './styles';
 
 export const ArticleGrid = ({ articles }) => (
-  <div css={gridStyles.grid}>
+  <div css={[gridStyles.grid, styles.articleGrid]}>
     {articles.map(({ title, url, slug, image, description }) => (
       <div css={styles.gridItem} key={slug}>
         <Link href={url}>

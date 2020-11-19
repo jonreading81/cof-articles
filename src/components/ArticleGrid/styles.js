@@ -1,7 +1,11 @@
 import { css } from '@emotion/react';
-import { minBreakpoints, mediaQuery, theme } from '../../styles';
+import { minBreakpoints, mediaQuery, theme, stack } from '../../styles';
 
 const { colors } = theme;
+
+export const articleGrid = css`
+  margin: ${stack(48)};
+`;
 
 export const gridItem = css`
   background-color: lightblue;

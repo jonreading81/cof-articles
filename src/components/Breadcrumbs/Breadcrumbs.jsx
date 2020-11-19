@@ -5,7 +5,7 @@ import * as styles from './styles';
 export const Breadcrumbs = ({ links }) => (
   <ol css={styles.list}>
     {links.map(({ title, url }) => (
-      <li key={url} className="text-lg" css={styles.listItem}>
+      <li key={url} className="text-xs" css={styles.listItem}>
         <Link href={url}>{title}</Link>
       </li>
     ))}

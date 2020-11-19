@@ -22,4 +22,9 @@ export const listItem = css`
     top: 2px;
     transform: rotate(15deg);
   }
+
+  a {
+    color: ${theme.colors.black};
+    text-decoration: none;
+  }
 `;
