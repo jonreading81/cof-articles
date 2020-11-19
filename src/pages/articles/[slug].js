@@ -16,7 +16,7 @@ const Post = ({ htmlString, title, description, image, url }) => {
         <meta title="description" content={description} />
       </Head>
       <section css={styles.article}>
-        <img src={image} width="100%" />
+        <img css={styles.mastheadImage} src={image} width="100%" />
         <Breadcrumbs links={links} />
         <div>
           <h1>{title}</h1>
