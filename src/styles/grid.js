@@ -63,6 +63,7 @@ export const gridItem = css`
     text-decoration: none;
     color: ${colors.black};
   }
+  
   h2,
   p {
     padding: 0 1rem;

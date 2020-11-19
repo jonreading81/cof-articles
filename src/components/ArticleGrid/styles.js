@@ -1,7 +1,5 @@
 import { css } from '@emotion/react';
-import { minBreakpoints } from '../../styles/breakpoints';
-import { mediaQuery } from '../../styles/mediaQuery';
-import { theme } from '../../styles/theme';
+import { minBreakpoints, mediaQuery, theme } from '../../styles';
 
 const { colors } = theme;
 

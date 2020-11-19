@@ -16,6 +16,7 @@ export const getPost = (slug) => {
   return {
     ...parsedMarkdown.data,
     slug,
+    url: `/articles/${slug}`,
     htmlString,
   };
 };

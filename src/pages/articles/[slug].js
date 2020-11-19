@@ -1,9 +1,13 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
+import { Breadcrumbs } from '../../components/Breadcrumbs';
 import { getPost, getSlugs } from '../../services/posts';
 
-const Post = ({ htmlString, title, description, image, slug }) => {
+const Post = ({ htmlString, title, description, image, url }) => {
+  const links = [
+    { title: 'Home', url: '/' },
+    { title, url },
+  ];
   return (
     <>
       <Head>
@@ -12,15 +16,9 @@ const Post = ({ htmlString, title, description, image, slug }) => {
       </Head>
       <section>
         <img src={image} width="100%" />
+        <Breadcrumbs links={links} />
         <h1>{title}</h1>
-        <ol>
-          <li>
-            <Link href="/">Articles</Link>
-          </li>
-          <li>
-            <Link href={`/articles/${slug}`}>{title}</Link>
-          </li>
-        </ol>
+
         <div dangerouslySetInnerHTML={{ __html: htmlString }} />
       </section>
     </>
