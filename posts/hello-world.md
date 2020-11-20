@@ -1,7 +1,9 @@
 ---
 title: Hello World
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-image: /images/beans.jpeg
+thumbnail: /images/beans.jpeg
+masthead: /images/beans.jpeg
+color: lavenderblush
 ---
 
 ## Una Iason iter pluvio instruxere vitulos fueris

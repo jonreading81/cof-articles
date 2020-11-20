@@ -1,16 +1,24 @@
 import { css } from '@emotion/react';
-import { minBreakpoints } from '../../styles/breakpoints';
-import { mediaQuery } from '../../styles/mediaQuery';
-import { theme, pxToRem, stack } from '../../styles';
+import {
+  theme,
+  pxToRem,
+  stack,
+  responsiveFontSize,
+  mediaQuery,
+  minBreakpoints,
+} from '../../styles';
 
 export const list = css`
-  margin: ${stack(16)};
+  margin: 0;
   list-style-type: none;
   padding: 0;
 `;
 
 export const listItem = css`
   display: inline;
+  ${responsiveFontSize(theme.text.sm)}
+
+  font-weight: bold;
 
   & + li::before {
     border-right: ${pxToRem(1)} solid ${theme.colors.black};
@@ -24,7 +32,7 @@ export const listItem = css`
   }
 
   a {
-    color: ${theme.colors.black};
     text-decoration: none;
+    color: ${theme.colors.black};
   }
 `;

@@ -1,7 +1,9 @@
 ---
 title: Danny
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-image: /images/coconuts.jpeg
+thumbnail: /images/coconuts.jpeg
+masthead: /images/coconuts.jpeg
+color: lightgreen
 ---
 
 ## Una Iason iter pluvio instruxere vitulos fueris

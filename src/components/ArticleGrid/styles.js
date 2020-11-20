@@ -7,8 +7,8 @@ export const articleGrid = css`
   margin: ${stack(48)};
 `;
 
-export const gridItem = css`
-  background-color: lightblue;
+export const gridItem = (color = theme.colors.primary) => css`
+  background-color: ${color};
   grid-column: auto / span 12;
 
   ${mediaQuery(

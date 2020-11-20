@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import { fontFace, responsiveFontSize } from './fonts';
 import { theme } from './theme';
+import { stack, inset } from './spacing';
 
 const { fonts, colors, text } = theme;
 
@@ -24,6 +25,20 @@ html, body, #__next {
     box-sizing: border-box;
   }
 
+  blockquote {
+    background: #f9f9f9;
+    border-left: 8px solid #ccc;
+    margin: ${stack(24)};
+    font-weight: bold;
+    font-style: italic;
+
+    p {
+      padding: ${inset(24)};
+
+      ${responsiveFontSize(text.md)}
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -33,7 +48,7 @@ html, body, #__next {
     font-family: ${fonts.PRIMARY_BOLD.family};
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.67em;
   }
 
   h1,
@@ -62,15 +77,17 @@ html, body, #__next {
     ${responsiveFontSize(text.sm)}
   }
 
-  p {
-    ${responsiveFontSize(text.sm)}
-  }
-
   .text-xs {
     ${responsiveFontSize(text.xs)}
   }
 
   .text-xss {
     ${responsiveFontSize(text.xxs)}
+  }
+
+  p {
+    ${responsiveFontSize(text.sm)}
+    margin-top: 0;
+    margin-bottom: 1.5em;
   }
 `;

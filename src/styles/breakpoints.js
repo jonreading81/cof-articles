@@ -1,6 +1,6 @@
 const SMALL = 480;
 const MEDIUM = 768;
-const LARGE = 1024;
+const LARGE = 1280;
 
 export const minBreakpoints = {
   SMALL: 0,

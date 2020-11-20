@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import * as gridStyles from '../../styles/grid';
+import { grid } from '../../styles';
 import * as styles from './styles';
 
 export const ArticleGrid = ({ articles }) => (
-  <div css={[gridStyles.grid, styles.articleGrid]}>
-    {articles.map(({ title, url, slug, image, description }) => (
-      <div css={styles.gridItem} key={slug}>
+  <div css={[grid, styles.articleGrid]}>
+    {articles.map(({ title, url, slug, thumbnail, description, color }) => (
+      <div css={styles.gridItem(color)} key={slug}>
         <Link href={url}>
           <a>
-            <img src={image} width="100%" />
+            <img src={thumbnail} width="100%" />
             <h2>{title}</h2>
           </a>
         </Link>

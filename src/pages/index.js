@@ -6,7 +6,7 @@ import * as styles from '../styles/pages/articles';
 
 const Home = ({ posts }) => (
   <div>
-    <h1 css={styles.heading}>Articles</h1>
+    <h1 css={styles.heading}>Call of the Forest</h1>
     <ArticleGrid articles={posts} />
   </div>
 );
