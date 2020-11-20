@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { Breadcrumbs } from '../Breadcrumbs';
+import { Header } from '../Header';
 import * as styles from './styles';
 import { grid } from '../../styles';
 
@@ -8,7 +9,7 @@ export const Article = ({
   htmlString,
   title,
   description,
-  masthead,
+  mastheadImage,
   url,
   color,
 }) => {
@@ -23,12 +24,7 @@ export const Article = ({
         <meta title="description" content={description} />
       </Head>
       <section css={styles.article}>
-        <img css={styles.mastheadImage} src={masthead} width="100%" />
-        <header css={styles.header(color)}>
-          <h1>{title}</h1>
-          <Breadcrumbs links={links} />
-        </header>
-
+        <Header title={title} mastheadImage={mastheadImage} color={color} links={links} />
         <div css={grid}>
           <div
             css={styles.articleContent}

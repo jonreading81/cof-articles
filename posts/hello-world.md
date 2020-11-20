@@ -2,7 +2,7 @@
 title: Hello World
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 thumbnail: /images/beans.jpeg
-masthead: /images/beans.jpeg
+mastheadImage: /images/beans.jpeg
 color: lavenderblush
 ---
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { getPosts } from '../services/posts';
 import { ArticleGrid } from '../components/ArticleGrid';
+import { Header } from '../components/Header';
 import * as styles from '../styles/pages/articles';
 
 const Home = ({ posts }) => (

@@ -2,7 +2,7 @@
 title: Fariekin
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 thumbnail: /images/coconuts.jpeg
-masthead: /images/coconuts.jpeg
+mastheadImage: /images/coconuts.jpeg
 color: lightblue
 ---
 

@@ -12,14 +12,14 @@ export const gridItem = (color = theme.colors.primary) => css`
   grid-column: auto / span 12;
 
   ${mediaQuery(
-    { min: minBreakpoints.MEDIUM },
+    { min: minBreakpoints.LARGE },
     css`
       grid-column: auto / span 6;
     `
   )};
 
   ${mediaQuery(
-    { min: minBreakpoints.LARGE },
+    { min: minBreakpoints.XLARGE },
     css`
       grid-column: auto / span 4;
     `
@@ -28,9 +28,16 @@ export const gridItem = (color = theme.colors.primary) => css`
     text-decoration: none;
     color: ${colors.black};
   }
+  img {
+    margin: ${stack(12)};
+  }
 
   h2,
   p {
     padding: 0 1rem;
+  }
+
+  p {
+    margin: ${stack(32)};
   }
 `;

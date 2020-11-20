@@ -2,7 +2,7 @@
 title: The Art Of Setting Goals
 description: When setting our goals we should pay attention to our feelings and ensure that our goals are aligned with the feelings that we want to embody.
 thumbnail: /images/thumbnails/sky.jpeg
-masthead: /images/mastheads/sky.jpeg
+mastheadImage: /images/mastheads/sky.jpeg
 color: lavender
 ---
 
