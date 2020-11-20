@@ -12,6 +12,7 @@ export const list = css`
   margin: 0;
   list-style-type: none;
   padding: 0;
+  margin: ${stack(24)};
 `;
 
 export const listItem = css`

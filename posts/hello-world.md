@@ -4,6 +4,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 thumbnail: /images/beans.jpeg
 mastheadImage: /images/beans.jpeg
 color: lavenderblush
+author: Amy Varga
+published: 01 Nov 2020
 ---
 
 ## Una Iason iter pluvio instruxere vitulos fueris

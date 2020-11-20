@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { Breadcrumbs } from '../Breadcrumbs';
-import { Header } from '../Header';
+
 import * as styles from './styles';
 import { grid } from '../../styles';
 
@@ -12,11 +12,10 @@ export const Article = ({
   mastheadImage,
   url,
   color,
+  published,
+  author,
 }) => {
-  const links = [
-    { title: 'Articles', url: '/' },
-    { title, url },
-  ];
+  const links = [{ title: 'Call of the Forest', url: '/' }];
   return (
     <>
       <Head>
@@ -24,7 +23,14 @@ export const Article = ({
         <meta title="description" content={description} />
       </Head>
       <section css={styles.article}>
-        <Header title={title} mastheadImage={mastheadImage} color={color} links={links} />
+        <img css={styles.mastheadImageImage} src={mastheadImage} width="100%" />
+        <header css={styles.header(color)}>
+          <h1 css={styles.heading}>{title}</h1>
+          {links && <Breadcrumbs links={links} />}
+          <div css={styles.details}>
+            By {author}, {published}
+          </div>
+        </header>
         <div css={grid}>
           <div
             css={styles.articleContent}

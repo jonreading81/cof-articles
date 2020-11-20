@@ -4,6 +4,8 @@ description: When setting our goals we should pay attention to our feelings and 
 thumbnail: /images/thumbnails/sky.jpeg
 mastheadImage: /images/mastheads/sky.jpeg
 color: lavender
+author: Amy Varga
+published: 03 Nov 2020
 ---
 
 Goals could be considered as external manifestations of desired feelings. Our hope is that when we achieve our goal we automatically embody the feelings we associated with that goal. For example my goal could be to have one million pounds in the bank. When I originally set the goal I associated one million pounds with feelings of safety and protection, independence, success and self esteem, freedom and happiness. So the feelings inspire the goal and it makes sense that we might ask someone, “What makes you happy?” as a first step towards setting a goal. It’s also plausible that one may not even have considered the feelings associated with a goal and rather one would just imagine that in that scenario they would feel good because perhaps they had seen it on television or heard about it from someone else.

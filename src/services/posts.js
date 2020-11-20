@@ -28,4 +28,7 @@ export const getSlugs = () => {
 
 export const getSlug = (filename) => filename.replace('.md', '');
 
-export const getPosts = () => getSlugs().map(getPost);
+export const getPosts = () =>
+  getSlugs()
+    .map(getPost)
+    .sort((a, b) => new Date(b.published) - new Date(a.published));
