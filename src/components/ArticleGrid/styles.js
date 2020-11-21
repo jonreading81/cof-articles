@@ -45,8 +45,4 @@ export const gridItem = (color = theme.colors.primary) => css`
   p {
     padding: 0 ${pxToRem(theme.spacing.sm)};
   }
-
-  p {
-    margin: ${stack(theme.spacing.xl)};
-  }
 `;

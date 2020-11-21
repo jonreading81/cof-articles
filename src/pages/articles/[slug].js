@@ -1,5 +1,5 @@
 import React from 'react';
-import { Article } from '../../components/Article';
+import { Article } from '../../components/pages/Article';
 import { getPost, getPostSlugs } from '../../services/posts';
 
 export const getStaticPaths = async () => ({

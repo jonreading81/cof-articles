@@ -6,19 +6,20 @@ import {
   mediaQuery,
   minBreakpoints,
   responsiveFontSize,
-} from '../../styles';
+} from '../../../styles';
 
 export const article = css`
   margin: ${stack(theme.spacing.xl)};
 `;
 
 export const articleContent = css`
-  padding: ${inset(0, theme.spacing.lg)};
+  padding: ${inset(0, theme.spacing.sm)};
   grid-column: auto / span 12;
+
   ${mediaQuery(
     { min: minBreakpoints.LARGE },
     css`
-      grid-column: 3 / span 12;
+      grid-column: 3 / span 10;
     `
   )};
 `;
@@ -36,16 +37,14 @@ export const mastheadImageImage = css`
   display: block;
 `;
 
-export const heading = css`
-  margin: 0;
-`;
-
-export const breadcrumbs = css`
-  margin: ${stack(theme.spacing.lg)};
-`;
+export const heading = css``;
 
 export const details = css`
+  font-weight: bold;
   ${responsiveFontSize(theme.text.xs)};
+  a {
+    color: ${theme.colors.black};
+  }
 `;
 
 export const avatar = css`

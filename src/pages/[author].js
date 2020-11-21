@@ -1,20 +1,6 @@
 import React from 'react';
 import { getAuthorSlugs, getAuthor, getPosts } from '../services/posts';
-import { ArticleIndex } from '../components/ArticleIndex';
-import { avatar, pageHeading } from '../styles';
-
-export const AuthorPage = ({ author, posts }) => (
-  <ArticleIndex title={author.name} posts={posts}>
-    <header>
-      <h1 css={pageHeading}>
-        {' '}
-        <img src={author.image} css={avatar(64)} />
-        {author.name}
-      </h1>
-    </header>
-    <div dangerouslySetInnerHTML={{ __html: author.htmlString }} />
-  </ArticleIndex>
-);
+import { Author } from '../components/pages/Author';
 
 export const getStaticPaths = async () => ({
   paths: getAuthorSlugs().map((author) => ({
@@ -32,4 +18,4 @@ export const getStaticProps = async ({ params: { author } }) => ({
   },
 });
 
-export default AuthorPage;
+export default Author;

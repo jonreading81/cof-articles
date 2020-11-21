@@ -1,13 +1,6 @@
 import React from 'react';
 import { getPosts } from '../services/posts';
-import { ArticleIndex } from '../components/ArticleIndex';
-import { pageHeading } from '../styles';
-
-const Index = ({ posts }) => (
-  <ArticleIndex posts={posts}>
-    <h1 css={pageHeading}>Call of the Forest</h1>
-  </ArticleIndex>
-);
+import { Home } from '../components/pages/Home';
 
 export const getStaticProps = async () => ({
   props: {
@@ -15,4 +8,4 @@ export const getStaticProps = async () => ({
   },
 });
 
-export default Index;
+export default Home;

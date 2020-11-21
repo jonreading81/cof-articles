@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { Breadcrumbs } from '../Breadcrumbs';
+import { Header } from '../../Header';
 
 import * as styles from './styles';
-import { grid, avatar } from '../../styles';
+import { grid, avatar } from '../../../styles';
 
 export const Article = ({
   htmlString,
@@ -22,13 +22,11 @@ export const Article = ({
       <meta title="description" content={description} />
     </Head>
     <section css={styles.article}>
+      <Header />
       <img css={styles.mastheadImageImage} src={mastheadImage} />
       <header css={styles.header(color)}>
         <h1 css={styles.heading}>{title}</h1>
-        <Breadcrumbs
-          links={[{ title: 'Call of the Forest', url: '/' }]}
-          style={styles.breadcrumbs}
-        />
+
         <div css={styles.details}>
           {author && (
             <>
