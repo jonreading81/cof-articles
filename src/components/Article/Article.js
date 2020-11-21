@@ -26,7 +26,7 @@ export const Article = ({
         <img css={styles.mastheadImageImage} src={mastheadImage} width="100%" />
         <header css={styles.header(color)}>
           <h1 css={styles.heading}>{title}</h1>
-          {links && <Breadcrumbs links={links} />}
+          <Breadcrumbs links={links} style={styles.breadcrumbs} />
           <div css={styles.details}>
             By {author}, {published}
           </div>

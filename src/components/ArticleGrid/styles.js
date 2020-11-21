@@ -1,10 +1,16 @@
 import { css } from '@emotion/react';
-import { minBreakpoints, mediaQuery, theme, stack } from '../../styles';
+import {
+  minBreakpoints,
+  mediaQuery,
+  theme,
+  stack,
+  pxToRem,
+} from '../../styles';
 
 const { colors } = theme;
 
 export const articleGrid = css`
-  margin: ${stack(48)};
+  margin: ${stack(theme.spacing.xl)};
 `;
 
 export const gridItem = (color = theme.colors.primary) => css`
@@ -24,20 +30,22 @@ export const gridItem = (color = theme.colors.primary) => css`
       grid-column: auto / span 4;
     `
   )};
+
   a {
     text-decoration: none;
     color: ${colors.black};
   }
+
   img {
-    margin: ${stack(12)};
+    margin: ${stack(theme.spacing.sm)};
   }
 
   h2,
   p {
-    padding: 0 1rem;
+    padding: 0 ${pxToRem(theme.spacing.sm)};
   }
 
   p {
-    margin: ${stack(32)};
+    margin: ${stack(theme.spacing.xl)};
   }
 `;

@@ -5,7 +5,7 @@ import { theme, pxToRem, stack, inset } from '../../styles';
 
 export const footer = css`
   p {
-    margin: ${inset(32, 0)};
+    margin: ${inset(theme.spacing.lg, 0)};
     text-align: center;
   }
 `;

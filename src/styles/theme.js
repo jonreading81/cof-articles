@@ -20,10 +20,10 @@ export const theme = {
   spacing: {
     base: 4,
     xs: 8,
-    sm: 12,
-    md: 16,
-    lg: 20,
-    xl: 24,
+    sm: 16,
+    md: 24,
+    lg: 32,
+    xl: 48,
   },
   text: {
     xxl: {
