@@ -10,7 +10,6 @@ import {
 
 export const heading = css`
   ${responsiveFontSize(theme.text.lg)};
-
   margin: ${inset(theme.spacing.md, 0)};
 `;
 
@@ -18,7 +17,7 @@ export const header = css`
   grid-column: auto / span 12;
   width: 100%;
   margin: ${stack(theme.spacing.md)};
-  padding: ${inset(theme.spacing.sm)};
+  padding: ${inset(0, theme.spacing.sm)};
 
   ${mediaQuery(
     { min: minBreakpoints.LARGE },
