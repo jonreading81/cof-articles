@@ -8,7 +8,7 @@ export const Author = ({ posts, author }) => (
   <div>
     <Header />
     <div css={grid}>
-      <header css={[styles.header(author.color)]}>
+      <header css={[styles.header]}>
         <h1 css={styles.heading}>
           <img src={author.image} css={avatar(72)} />
           {author.name}

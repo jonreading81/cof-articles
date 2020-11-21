@@ -1,7 +1,6 @@
 ---
 name: Amy Varga
 image: /images/authors/amy.jpeg
-color: lavender;
 ---
 
 I'm studying to do a pullup with a great sensai

@@ -14,12 +14,18 @@ export const heading = css`
   margin: ${inset(theme.spacing.md, 0)};
 `;
 
-export const header = (color) => css`
+export const header = css`
   grid-column: auto / span 12;
   width: 100%;
   margin: ${stack(theme.spacing.md)};
   padding: ${inset(theme.spacing.sm)};
-  background-color: ${color};
+
+  ${mediaQuery(
+    { min: minBreakpoints.LARGE },
+    css`
+      grid-column: auto / span 10;
+    `
+  )};
 
   ${mediaQuery(
     { min: minBreakpoints.XLARGE },
@@ -30,7 +36,6 @@ export const header = (color) => css`
 `;
 
 export const copy = css`
-  max-width: 720px;
   p {
     ${responsiveFontSize(theme.text.sm)};
   }
