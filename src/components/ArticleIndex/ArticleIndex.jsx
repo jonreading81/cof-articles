@@ -1,10 +1,9 @@
 import React from 'react';
 import { ArticleGrid } from '../ArticleGrid';
-import * as styles from './styles';
 
-export const Homepage = ({ posts }) => (
+export const ArticleIndex = ({ posts, children }) => (
   <div>
-    <h1 css={styles.heading}>Call of the Forest</h1>
+    {children}
     <ArticleGrid articles={posts} />
   </div>
 );

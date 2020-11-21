@@ -4,7 +4,7 @@ description: When setting our goals we should pay attention to our feelings and 
 thumbnail: /images/thumbnails/sky.jpeg
 mastheadImage: /images/mastheads/sky.jpeg
 color: lavender
-author: Amy Varga
+author: amy-varga
 published: 03 Nov 2020
 ---
 

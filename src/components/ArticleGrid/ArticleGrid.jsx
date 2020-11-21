@@ -9,7 +9,7 @@ export const ArticleGrid = ({ articles }) => (
       <div css={styles.gridItem(color)} key={slug}>
         <Link href={url}>
           <a>
-            <img src={thumbnail} width="100%" />
+            <img src={thumbnail} />
             <h2>{title}</h2>
           </a>
         </Link>

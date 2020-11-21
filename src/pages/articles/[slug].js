@@ -1,9 +1,9 @@
 import React from 'react';
 import { Article } from '../../components/Article';
-import { getPost, getSlugs } from '../../services/posts';
+import { getPost, getPostSlugs } from '../../services/posts';
 
 export const getStaticPaths = async () => ({
-  paths: getSlugs().map((slug) => ({
+  paths: getPostSlugs().map((slug) => ({
     params: {
       slug,
     },

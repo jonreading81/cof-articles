@@ -16,7 +16,7 @@ export const list = css`
 
 export const listItem = css`
   display: inline;
-  ${responsiveFontSize(theme.text.xs)}
+  ${responsiveFontSize(theme.text.sm)}
   font-weight: bold;
 
   & + li::before {

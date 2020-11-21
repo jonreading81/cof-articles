@@ -5,3 +5,5 @@ export * from './pxToRem';
 export * from './spacing';
 export * from './theme';
 export * from './grid';
+export * from './avatar';
+export * from './heading';

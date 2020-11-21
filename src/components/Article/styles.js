@@ -30,6 +30,7 @@ export const header = (color = theme.colors.primary) => css`
 `;
 
 export const mastheadImageImage = css`
+  width: 100%;
   max-height: 320px;
   object-fit: cover;
   display: block;
@@ -45,4 +46,11 @@ export const breadcrumbs = css`
 
 export const details = css`
   ${responsiveFontSize(theme.text.xs)};
+`;
+
+export const avatar = css`
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 `;

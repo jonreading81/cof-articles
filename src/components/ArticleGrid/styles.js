@@ -37,6 +37,7 @@ export const gridItem = (color = theme.colors.primary) => css`
   }
 
   img {
+    width: 100%;
     margin: ${stack(theme.spacing.sm)};
   }
 

@@ -1,10 +1,10 @@
 ---
-title: Hello World
+title: Danny
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-thumbnail: /images/beans.jpeg
-mastheadImage: /images/beans.jpeg
-color: lavenderblush
-author: Amy Varga
+thumbnail: /images/coconuts.jpeg
+mastheadImage: /images/coconuts.jpeg
+color: lightgreen
+author: jon-reading
 published: 01 Nov 2020
 ---
 

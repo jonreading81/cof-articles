@@ -1,10 +1,10 @@
 ---
-title: Fariekin
+title: Hello World
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-thumbnail: /images/coconuts.jpeg
-mastheadImage: /images/coconuts.jpeg
-color: lightblue
-author: Amy Varga
+thumbnail: /images/beans.jpeg
+mastheadImage: /images/beans.jpeg
+color: lavenderblush
+author: amy-varga
 published: 01 Nov 2020
 ---
 

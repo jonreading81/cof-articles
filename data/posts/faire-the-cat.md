@@ -1,10 +1,10 @@
 ---
-title: Danny
+title: Fariekin
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 thumbnail: /images/coconuts.jpeg
 mastheadImage: /images/coconuts.jpeg
-color: lightgreen
-author: Amy Varga
+color: lightblue
+author: jon-reading
 published: 01 Nov 2020
 ---
 
