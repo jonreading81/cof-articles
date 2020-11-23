@@ -1,21 +1,31 @@
 import React from 'react';
-import { getAuthorSlugs, getAuthor, getPosts } from '../services/posts';
+import { getAuthorSlugs, getAuthor, getPosts } from '../services/articles';
 import { Author } from '../components/pages/Author';
 
-export const getStaticPaths = async () => ({
-  paths: getAuthorSlugs().map((author) => ({
-    params: {
-      author,
-    },
-  })),
-  fallback: false,
-});
+export const getStaticPaths = async () => {
+  const slugs = await getAuthorSlugs();
 
-export const getStaticProps = async ({ params: { author } }) => ({
-  props: {
-    author: getAuthor(author),
-    posts: getPosts(author),
-  },
-});
+  return {
+    paths: slugs.map((author) => ({
+      params: {
+        author,
+      },
+    })),
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async ({ params: { author: slug } }) => {
+  const author = await getAuthor(slug);
+  console.log(author);
+  const posts = await getPosts(author.id);
+
+  return {
+    props: {
+      author,
+      posts,
+    },
+  };
+};
 
 export default Author;

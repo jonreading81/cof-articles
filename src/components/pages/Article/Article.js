@@ -1,4 +1,5 @@
 import React from 'react';
+import { RichText } from 'prismic-reactjs';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Header } from '../../Header';
@@ -15,6 +16,7 @@ export const Article = ({
   color,
   published,
   author,
+  content,
 }) => (
   <>
     <Head>
@@ -39,14 +41,11 @@ export const Article = ({
               ,&nbsp;
             </>
           )}
-          <span>{published}</span>
+          <span>{new Date(published).toDateString()}</span>
         </div>
       </header>
       <div css={grid}>
-        <div
-          css={styles.articleContent}
-          dangerouslySetInnerHTML={{ __html: htmlString }}
-        />
+        <div css={styles.articleContent}>{RichText.render(content)}</div>
       </div>
     </section>
   </>

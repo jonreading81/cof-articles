@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArticleGrid } from '../../ArticleGrid';
+import { RichText } from 'prismic-reactjs';
 import { Header } from '../../Header';
 import * as styles from './styles';
 import { avatar, grid } from '../../../styles';
@@ -13,10 +14,7 @@ export const Author = ({ posts, author }) => (
           <img src={author.image} css={avatar(72)} />
           {author.name}
         </h1>
-        <div
-          css={styles.copy}
-          dangerouslySetInnerHTML={{ __html: author.htmlString }}
-        />
+        <div css={styles.copy}>{RichText.render(author.intro)}</div>
       </header>
     </div>
 

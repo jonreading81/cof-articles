@@ -5,7 +5,7 @@ import * as styles from './styles';
 
 export const ArticleGrid = ({ articles }) => (
   <div css={[grid, styles.articleGrid]}>
-    {articles.map(({ title, url, slug, thumbnail, description, color }) => (
+    {articles.map(({ title, url, slug, thumbnail, summary, color }) => (
       <div css={styles.gridItem(color)} key={slug}>
         <Link href={url}>
           <a>
@@ -13,7 +13,7 @@ export const ArticleGrid = ({ articles }) => (
             <h2>{title}</h2>
           </a>
         </Link>
-        <p>{description}</p>
+        <p>{summary}</p>
       </div>
     ))}
   </div>
