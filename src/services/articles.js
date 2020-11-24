@@ -65,11 +65,13 @@ export const getAuthors = async () =>
   await getAuthorsAPI().map(parseAuthorData);
 
 const getArticlesAPI = async (author) =>
-  await Client().query([
-    Prismic.Predicates.at('document.type', 'article'),
-    author && Prismic.Predicates.at('my.article.author', author),
-  ]).results;
+  (
+    await Client().query([
+      Prismic.Predicates.at('document.type', 'article'),
+      author && Prismic.Predicates.at('my.article.author', author),
+    ])
+  ).results;
 
 export const getAuthorsAPI = async () =>
-  await Client().query([Prismic.Predicates.at('document.type', 'author')])
+  (await Client().query([Prismic.Predicates.at('document.type', 'author')]))
     .results;
