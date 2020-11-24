@@ -17,7 +17,6 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { author: slug } }) => {
   const author = await getAuthor(slug);
-  console.log(author);
   const posts = await getPosts(author.id);
 
   return {

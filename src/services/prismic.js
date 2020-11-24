@@ -3,7 +3,6 @@ import Prismic from 'prismic-javascript';
 export const apiEndpoint = 'https://call-of-the-forest.prismic.io/api/v2';
 export const accessToken = process.env.PRISMIC_ACCESS_TOKEN;
 
-// Client method to query documents from the Prismic repo
 const Client = (req = null) =>
   Prismic.client(apiEndpoint, createClientOptions(req, accessToken));
 
