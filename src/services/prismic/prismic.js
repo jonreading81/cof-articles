@@ -17,4 +17,10 @@ const createClientOptions = (req = null, prismicAccessToken = null) => {
   };
 };
 
-export { Prismic, Client };
+const getDocuments = async (type) =>
+  (await Client().query([Prismic.Predicates.at('document.type', type)]))
+    .results;
+
+const getDocument = async (type, uid) => await Client().getByUID(type, uid);
+
+export { Prismic, Client, getDocuments, getDocument };

@@ -3,6 +3,7 @@ import { RichText } from 'prismic-reactjs';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Header } from '../../Header';
+import { Gallery } from '../../Gallery';
 
 import * as styles from './styles';
 import { grid, avatar } from '../../../styles';
@@ -17,6 +18,7 @@ export const Article = ({
   published,
   author,
   content,
+  gallery,
 }) => (
   <>
     <Head>
@@ -44,6 +46,7 @@ export const Article = ({
           <span>{new Date(published).toDateString()}</span>
         </div>
       </header>
+      {!!gallery && <Gallery images={gallery.images} />}
       <div css={grid}>
         <div css={styles.articleContent}>{RichText.render(content)}</div>
       </div>

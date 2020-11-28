@@ -1,9 +1,9 @@
 import React from 'react';
 import { Article } from '../../components/pages/Article';
-import { getPost, getPostSlugs } from '../../services/articles';
+import { getArticle, getArticleSlugs } from '../../services/prismic/articles';
 
 export const getStaticPaths = async () => {
-  const slugs = await getPostSlugs();
+  const slugs = await getArticleSlugs();
 
   return {
     paths: slugs.map((slug) => ({
@@ -16,7 +16,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { slug } }) => {
-  const props = await getPost(slug);
+  const props = await getArticle(slug);
 
   return { props };
 };
