@@ -10,8 +10,14 @@ import {
 const { colors } = theme;
 
 export const imageWrapper = css`
-display:
   grid-column: auto / span 12;
+
+  ${mediaQuery(
+    { min: minBreakpoints.MEDIUM },
+    css`
+      grid-column: auto / span 6;
+    `
+  )};
 
   ${mediaQuery(
     { min: minBreakpoints.LARGE },
@@ -20,7 +26,7 @@ display:
     `
   )};
 
-  a{
+  a {
     text-decoration: none;
   }
 `;
