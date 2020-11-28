@@ -16,6 +16,7 @@ export const theme = {
   colors: {
     black: '#333',
     primary: 'lightblue',
+    grey: '#f9f9f9',
   },
   spacing: {
     base: 4,

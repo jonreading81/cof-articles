@@ -26,7 +26,7 @@ html, body, #__next {
   }
 
   blockquote {
-    background: #f9f9f9;
+    background: ${colors.grey};
     border-left: 8px solid #ccc;
     margin: ${stack(24)};
     font-weight: bold;

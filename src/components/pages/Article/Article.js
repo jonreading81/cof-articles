@@ -46,10 +46,10 @@ export const Article = ({
           <span>{new Date(published).toDateString()}</span>
         </div>
       </header>
-      {!!gallery && <Gallery images={gallery.images} />}
       <div css={grid}>
         <div css={styles.articleContent}>{RichText.render(content)}</div>
       </div>
+      {!!gallery && <Gallery images={gallery.images} />}
     </section>
   </>
 );
