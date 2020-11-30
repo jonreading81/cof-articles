@@ -2,7 +2,6 @@ import React from 'react';
 import { RichText } from 'prismic-reactjs';
 import Head from 'next/head';
 import Link from 'next/link';
-import { Header } from '../../Header';
 import { Gallery } from '../../Gallery';
 
 import * as styles from './styles';
@@ -26,7 +25,6 @@ export const Article = ({
       <meta title="description" content={description} />
     </Head>
     <section css={styles.article}>
-      <Header />
       <img css={styles.mastheadImageImage} src={mastheadImage} />
       <header css={styles.header(color)}>
         <h1 css={styles.heading}>{title}</h1>

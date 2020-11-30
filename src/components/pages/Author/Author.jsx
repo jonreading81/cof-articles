@@ -7,7 +7,6 @@ import { avatar, grid } from '../../../styles';
 
 export const Author = ({ posts, author }) => (
   <div>
-    <Header />
     <div css={grid}>
       <header css={[styles.header]}>
         <h1 css={styles.heading}>
