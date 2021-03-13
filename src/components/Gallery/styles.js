@@ -13,15 +13,15 @@ export const imageWrapper = css`
   grid-column: auto / span 12;
 
   ${mediaQuery(
-    { min: minBreakpoints.MEDIUM },
-    css`
+    minBreakpoints.MEDIUM,
+    `
       grid-column: auto / span 6;
     `
   )};
 
   ${mediaQuery(
-    { min: minBreakpoints.LARGE },
-    css`
+    minBreakpoints.LARGE,
+    `
       grid-column: auto / span 4;
     `
   )};

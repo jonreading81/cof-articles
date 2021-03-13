@@ -20,15 +20,15 @@ export const header = css`
   padding: ${inset(0, theme.spacing.sm)};
 
   ${mediaQuery(
-    { min: minBreakpoints.LARGE },
-    css`
+    minBreakpoints.LARGE,
+    `
       grid-column: auto / span 10;
     `
   )};
 
   ${mediaQuery(
-    { min: minBreakpoints.XLARGE },
-    css`
+    minBreakpoints.XLARGE,
+    `
       grid-column: auto / span 8;
     `
   )};

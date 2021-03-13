@@ -18,15 +18,15 @@ export const gridItem = (color = theme.colors.primary) => css`
   grid-column: auto / span 12;
 
   ${mediaQuery(
-    { min: minBreakpoints.LARGE },
-    css`
-      grid-column: auto / span 6;
+    minBreakpoints.LARGE,
     `
+      grid-column: auto / span 6;
+   `
   )};
 
   ${mediaQuery(
-    { min: minBreakpoints.XLARGE },
-    css`
+    minBreakpoints.XLARGE,
+    `
       grid-column: auto / span 4;
     `
   )};

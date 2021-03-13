@@ -19,8 +19,8 @@ export const grid = css`
   grid-template-columns: repeat(${GRID_NUMBER_OF_COLUMNS}, 1fr);
 
   ${mediaQuery(
-    { min: minBreakpoints.LARGE },
-    css`
+    minBreakpoints.LARGE,
+    `
       grid-column-gap: ${GRID_COLUMN_GAP_LARGE};
       grid-row-gap: ${GRID_ROW_GAP_LARGE};
     `

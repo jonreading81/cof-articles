@@ -17,8 +17,8 @@ export const articleContent = css`
   grid-column: auto / span 12;
 
   ${mediaQuery(
-    { min: minBreakpoints.LARGE },
-    css`
+    minBreakpoints.LARGE,
+    `
       grid-column: 3 / span 10;
     `
   )};

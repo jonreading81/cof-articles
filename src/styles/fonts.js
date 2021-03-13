@@ -27,10 +27,9 @@ export const responsiveFontSize = ({ SMALL, ...sizes }) => css`
 
   ${Object.keys(sizes).map((breakpoint) =>
     mediaQuery(
-      { min: minBreakpoints[breakpoint] },
-      css`
-        ${fontSize(sizes[breakpoint])}
-      `
+      minBreakpoints[breakpoint],
+
+      fontSize(sizes[breakpoint])
     )
   )}
 `;

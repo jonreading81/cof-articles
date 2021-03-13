@@ -25,6 +25,7 @@ export const link = css`
   ${responsiveFontSize(theme.text.md)};
   cursor: pointer;
   color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   &:hover {
     background: #4e969e;
