@@ -22,6 +22,14 @@ export const articleContent = css`
       grid-column: 3 / span 10;
     `
   )};
+
+  .embed-youtube {
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+  }
 `;
 
 export const header = (color = theme.colors.primary) => css`

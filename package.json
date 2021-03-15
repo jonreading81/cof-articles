@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "upload": "aws s3 sync out s3://articles.calloftheforest.com",
+    "upload": "aws s3 sync out s3://articles.calloftheforest.com  --cache-control max-age=600",
     "deploy": "yarn build && yarn export && yarn upload"
   },
   "dependencies": {
