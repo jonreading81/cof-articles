@@ -12,6 +12,7 @@ export const Article = ({
   title,
   description,
   mastheadImage,
+  thumbnail,
   url,
   color,
   published,
@@ -25,7 +26,15 @@ export const Article = ({
       <meta title="description" content={description} />
     </Head>
     <section css={styles.article}>
-      <img css={styles.mastheadImageImage} src={mastheadImage} />
+      <img
+        css={styles.mastheadImage}
+        srcSet={`${thumbnail} 480w,
+             ${mastheadImage} 1280w`}
+        sizes="(max-width: 600px) 480px,
+       1280px"
+        src={thumbnail}
+        alt=""
+      />
       <header css={styles.header(color)}>
         <h1 css={styles.heading}>{title}</h1>
 

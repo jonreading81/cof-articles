@@ -30,7 +30,7 @@ export const header = (color = theme.colors.primary) => css`
   margin: ${stack(theme.spacing.md)};
 `;
 
-export const mastheadImageImage = css`
+export const mastheadImage = css`
   width: 100%;
   max-height: 320px;
   object-fit: cover;

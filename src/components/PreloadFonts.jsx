@@ -4,7 +4,7 @@ export const PreloadFonts = ({ fonts }) => (
   <>
     {fonts.map(({ family, formats: { ttf } }) => (
       <link
-        key={family}
+        key={ttf}
         rel="preload"
         href={ttf}
         as="font"
