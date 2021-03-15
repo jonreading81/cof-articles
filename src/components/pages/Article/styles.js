@@ -32,6 +32,7 @@ export const header = (color = theme.colors.primary) => css`
 
 export const mastheadImage = css`
   width: 100%;
+  height: auto;
   max-height: 320px;
   object-fit: cover;
   display: block;

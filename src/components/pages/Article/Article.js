@@ -36,6 +36,8 @@ export const Article = ({
         sizes="(max-width: 600px) 480px,
        1280px"
         src={thumbnail}
+        width="480px"
+        height="270px"
         alt=""
       />
       <header css={styles.header(color)}>
