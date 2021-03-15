@@ -3,11 +3,15 @@ import { Client, Prismic, getDocuments, getDocument } from './prismic';
 const parseAuthorData = ({
   uid,
   id,
-  data: { name, image, intro },
+
+  tags,
+  data: { name, image, intro, meta },
   ...author
 }) => ({
   id,
   uid,
+  meta,
+  tags,
   name,
   image: image.url,
   intro,

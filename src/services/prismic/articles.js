@@ -5,6 +5,7 @@ import { getGallery } from './gallery';
 const parseArticleData = ({
   id,
   uid,
+  tags,
   first_publication_date,
   data: { title, image, author, content, color, summary, gallery },
   ...article
@@ -12,6 +13,7 @@ const parseArticleData = ({
   return {
     id,
     uid,
+    tags,
     slug: uid,
     author,
     gallery,

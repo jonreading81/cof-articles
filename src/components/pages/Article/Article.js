@@ -19,11 +19,14 @@ export const Article = ({
   author,
   content,
   gallery,
+  tags,
 }) => (
   <>
     <Head>
       <title>{title}</title>
       <meta title="description" content={description} />
+      <meta name="keywords" content={tags.join(', ')} />
+      {author && <meta name="author" content={author.name} />}
     </Head>
     <section css={styles.article}>
       <img
