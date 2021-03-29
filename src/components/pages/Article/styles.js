@@ -33,7 +33,7 @@ export const articleContent = css`
 `;
 
 export const header = (color = theme.colors.primary) => css`
-  background-color: ${color};
+  background-color: var(--color, ${theme.colors.primary});
   padding: ${inset(theme.spacing.sm)};
   margin: ${stack(theme.spacing.md)};
 `;
@@ -54,11 +54,4 @@ export const details = css`
   a {
     color: ${theme.colors.black};
   }
-`;
-
-export const avatar = css`
-  vertical-align: middle;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
 `;

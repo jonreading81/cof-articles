@@ -10,7 +10,7 @@ import { grid, avatar } from '../../../styles';
 export const Article = ({
   htmlString,
   title,
-  description,
+  summary,
   mastheadImage,
   thumbnail,
   url,
@@ -24,7 +24,7 @@ export const Article = ({
   <>
     <Head>
       <title>{title}</title>
-      <meta title="description" content={description} />
+      <meta name="description" content={summary} />
       <meta name="keywords" content={tags.join(', ')} />
       {author && <meta name="author" content={author.name} />}
     </Head>
@@ -40,7 +40,7 @@ export const Article = ({
         height="270px"
         alt=""
       />
-      <header css={styles.header(color)}>
+      <header style={{ '--color': color }} css={styles.header}>
         <h1 css={styles.heading}>{title}</h1>
 
         <div css={styles.details}>
@@ -48,7 +48,13 @@ export const Article = ({
             <>
               <Link href={author.url}>
                 <a>
-                  <img src={author.image} css={avatar(32)} />
+                  <img
+                    src={author.image}
+                    css={avatar(32)}
+                    width="32px"
+                    height="32px"
+                    alt={`Image of ${author.name}`}
+                  />
                   <span>{author.name}</span>
                 </a>
               </Link>

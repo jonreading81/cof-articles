@@ -8,7 +8,7 @@ export const sidebar = (isOpen) => css`
   height: 100vh;
   left: 0;
   position: absolute;
-  background: #6cadb5;
+  background: #0c383e;
   transform: translateX(${isOpen ? '0' : '-100%'});
   transition: 0.7s transform;
   list-style: none;
@@ -20,7 +20,7 @@ export const link = css`
   display: block;
   padding: 1rem;
   margin: 0;
-  background: #6cadb5;
+  background: #0c383e;
   transition: 0.7s background;
   ${responsiveFontSize(theme.text.md)};
   cursor: pointer;
@@ -28,6 +28,6 @@ export const link = css`
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   &:hover {
-    background: #4e969e;
+    background: #195861;
   }
 `;
