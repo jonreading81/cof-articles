@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
-import Link from 'next/link';
-import * as styles from './styles';
-import { NavigationContext } from '../../context/navigation';
+import React, { useContext } from "react";
+import Link from "next/link";
+import * as styles from "./styles";
+import { NavigationContext } from "../../context/navigation";
 
 const links = [
-  { title: 'Articles', href: '/' },
-  { title: 'Jon Reading', href: '/jon-reading' },
-  { title: ' Amy Varga', href: '/amy-varga' },
+  { title: "Articles", href: "/" },
+  { title: " Amy Varga", href: "/amy-varga" },
 ];
 
 export const Sidebar = () => {
