@@ -1,11 +1,11 @@
-import React from 'react';
-import { RichText } from 'prismic-reactjs';
-import Head from 'next/head';
-import Link from 'next/link';
-import { Gallery } from '../../Gallery';
+import React from "react";
+import { RichText } from "prismic-reactjs";
+import Head from "next/head";
+import Link from "next/link";
+import { Gallery } from "../../Gallery";
 
-import * as styles from './styles';
-import { grid, avatar } from '../../../styles';
+import * as styles from "./styles";
+import { grid, avatar } from "../../../styles";
 
 export const Article = ({
   htmlString,
@@ -25,7 +25,7 @@ export const Article = ({
     <Head>
       <title>{title}</title>
       <meta name="description" content={summary} />
-      <meta name="keywords" content={tags.join(', ')} />
+      <meta name="keywords" content={tags.join(", ")} />
       {author && <meta name="author" content={author.name} />}
     </Head>
     <section css={styles.article}>
@@ -40,23 +40,21 @@ export const Article = ({
         height="270px"
         alt=""
       />
-      <header style={{ '--color': color }} css={styles.header}>
+      <header style={{ "--color": color }} css={styles.header}>
         <h1 css={styles.heading}>{title}</h1>
 
         <div css={styles.details}>
           {author && (
             <>
               <Link href={author.url}>
-                <a>
-                  <img
-                    src={author.image}
-                    css={avatar(32)}
-                    width="32px"
-                    height="32px"
-                    alt={`Image of ${author.name}`}
-                  />
-                  <span>{author.name}</span>
-                </a>
+                <img
+                  src={author.image}
+                  css={avatar(32)}
+                  width="32px"
+                  height="32px"
+                  alt={`Image of ${author.name}`}
+                />
+                <span>{author.name}</span>
               </Link>
               ,&nbsp;
             </>

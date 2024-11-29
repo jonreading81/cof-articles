@@ -15,8 +15,8 @@ export const Sidebar = () => {
     <ul onClick={() => setOpen(false)} css={styles.sidebar(isOpen)}>
       {links.map(({ title, href }) => (
         <li css={styles.listItem} key={href}>
-          <Link href={href}>
-            <a css={styles.link}>{title}</a>
+          <Link href={href} css={styles.link}>
+            {title}
           </Link>
         </li>
       ))}

@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import * as styles from './styles';
+import React from "react";
+import Link from "next/link";
+import * as styles from "./styles";
 
 export const Breadcrumbs = ({ links, style }) => (
   <ol css={[styles.list, style]}>

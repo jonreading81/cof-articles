@@ -1,5 +1,5 @@
-import { css } from '@emotion/react';
-import { theme, pxToRem, stack, inset, responsiveFontSize } from '../../styles';
+import { css } from "@emotion/react";
+import { theme, pxToRem, stack, inset, responsiveFontSize } from "../../styles";
 
 export const sidebar = (isOpen) => css`
   margin: 0;
@@ -9,7 +9,7 @@ export const sidebar = (isOpen) => css`
   left: 0;
   position: absolute;
   background: #0c383e;
-  transform: translateX(${isOpen ? '0' : '-100%'});
+  transform: translateX(${isOpen ? "0" : "-100%"});
   transition: 0.7s transform;
   list-style: none;
 `;
@@ -26,6 +26,7 @@ export const link = css`
   cursor: pointer;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  text-decoration: none;
 
   &:hover {
     background: #195861;
